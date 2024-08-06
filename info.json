@@ -1,0 +1,19 @@
+[
+    {
+        "clave":"ventas",
+        "recibos":[
+            {
+                "id": "1",
+                "fecha":"",
+                "usuario":"",
+                "direccion":"",
+                "nomre encargado":"",
+                "cargo":"",
+                "producto":"",
+                "precio":"",
+                "cantidad":""
+            }
+        ]
+
+    }
+]
