@@ -1,19 +1,69 @@
 [
     {
-        "clave":"ventas",
-        "recibos":[
+        "clave": "ventas",
+        "recibosventas": [
             {
-                "id": "1",
-                "fecha":"",
-                "usuario":"",
-                "direccion":"",
-                "nomre encargado":"",
-                "cargo":"",
-                "producto":"",
-                "precio":"",
-                "cantidad":""
+                "Fecha": "6-08-2024",
+                "Usuario": "Jerxon",
+                "Direccion": "esperanza",
+                "Nombre encargado": "pedro",
+                "Cargo": "vendedor",
+                "Producto": "Pastel de Chocolate",
+                "Cantidad": 1,
+                "Precio": 5500,
+                "Precio total": 5500
+            },
+            {
+                "Fecha": "07-08-2024",
+                "Usuario": "yuli",
+                "Direccion": "las torres",
+                "Nombre del encargado": "camila",
+                "Cargo": "vendedora",
+                "Producto": "pan de queso",
+                "Cantidad": 2,
+                "Precio": 800,
+                "Precio total": 1600
+            },
+            {
+                "Fecha": "20-07-2024",
+                "Usuario": "yeferson",
+                "Direccion": "camilo torres",
+                "Nombre del encargado": "pedro",
+                "Cargo": "vendedor",
+                "Producto": "Pastel de Vainilla",
+                "Cantidad": 1,
+                "Precio": 5000,
+                "Precio total": 5000
+            }
+        ],
+        "recibosCompras": [
+            {
+                "Fecha": "08-08-2024",
+                "Proveedor": "valerie",
+                "Conctacto": "34252622",
+                "Producto": "harina",
+                "Cantidad": 4,
+                "Precio": 3500,
+                "Precio total": 14000
+            },
+            {
+                "Fecha": "04-08-2024",
+                "Proveedor": "luis",
+                "Conctacto": "3244252612",
+                "Producto": "queso",
+                "Cantidad": 1,
+                "Precio": 2000,
+                "Precio total": 2000
+            },
+            {
+                "Fecha": "07-08-2024",
+                "Proveedor": "pepito",
+                "Conctacto": "3214562789",
+                "Producto": "levadura",
+                "Cantidad": 5,
+                "Precio": 2500,
+                "Precio total": 12500
             }
         ]
-
     }
 ]
