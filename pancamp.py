@@ -172,19 +172,19 @@ while booleanito==True:
             if choose==1:
                 print("======PANADERIA======")
                 for i in product["Panaderia"]:
-                    print(i)
+                    print("-", i," " "precio:",product["Panaderia"][i])
             if choose==2:
                 print("======PASTELERIA======")
                 for i in product["Pasteleria"]:
-                    print(i)
+                    print("-", i," " "precio:",product["Pasteleria"][i])
             if choose==3:
                 print("======BEBIDAS======")
                 for i in product["Bebidas"]:
-                    print(i)
+                    print("-", i," " "precio:",product["Bebidas"][i])
             if choose==4:
                 print("======PROMOCIONES======")
                 for i in product["Apartado de promociones"]:
-                    print(i)
+                    print("-", i," " "precio:", product["Apartado de promociones"][i])
             if choose==5:
                 print("")
                 print("regresando al menú principal...")
