@@ -34,6 +34,17 @@
                 "Cantidad": 1,
                 "Precio": 5000,
                 "Precio total": 5000
+            },
+            {
+                "Fecha": "02-08-2024",
+                "Usuario": "yurley",
+                "Direccion": "la esperanza",
+                "Nombre del encargado": "pepito",
+                "Cargo": "vendedor",
+                "Producto": "Postre de Tres Leches",
+                "Cantidad": 2,
+                "Precio": 4500,
+                "Precio total": 9000
             }
         ],
         "recibosCompras": [

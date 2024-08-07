@@ -97,6 +97,7 @@ while booleanito==True:
             print("Elige una opción por favor")
             opci=int(input())
             if opci==1:
+                
                 another=True
                 while another==True:
                     info=openArchivo()#le da la opción al usuario de busca por fecha especifica o ver todo los informes de ventas
@@ -105,25 +106,30 @@ while booleanito==True:
                             "si de lo contrario quieres verlos todos escribe (all) y (s) para salir")
                     elección=input()
                     #muestra los informes por fechas especificas
+                   
                     if elección=="ver":
+                        punch=True
+                        while punch==True:
+                            cell=0
+                            print("Ingrese la fecha de las ventas que busca")
+                            fordate=input()
+                            print("")
+                            for i in info[0]["recibosventas"]:
+                                if i["Fecha"]==fordate:
+                                    cell=1 
+                                    print("=========================================================")
+                                    print("Fecha:  ",i["Fecha"])
+                                    print("Producto:  ",i["Producto"])
+                                    print("Cantidad vendida:  ",i["Cantidad"])
+                                    print("Precio:  ",i["Precio"])
+                                    print("Precio Total:  ",i["Precio total"])
+                                    print("=========================================================")
+                                    print("")
+                                    punch=False
+                            if cell==0:
+                                print("No hay registro de venta con esta fecha")
 
-                        print("Ingrese la fecha de las ventas que busca")
-                        fordate=input()
-                        print("")
-                        for i in info[0]["recibosventas"]:
-                            if i["Fecha"]==fordate:
-                                print("=========================================================")
-                                print("Fecha:  ",i["Fecha"])
-                                print("Producto:  ",i["Producto"])
-                                print("Cantidad vendida:  ",i["Cantidad"])
-                                print("Precio:  ",i["Precio"])
-                                print("=========================================================")
-                                print("")
-                            """
-                            if  i["Fecha"]!=fordate:
-                                print("")
-                                print("no hay registro de venta con esta fecha")
-                            """          
+                                  
                     #muestra todo los informes   
                     if elección=="all":
                         for i in info[0]["recibosventas"]:
@@ -132,8 +138,10 @@ while booleanito==True:
                             print("Producto:  ",i["Producto"])
                             print("Cantidad vendida:  ",i["Cantidad"])
                             print("Precio:  ",i["Precio"])
+                            print("Precio Total:  ",i["Precio total"])
                             print("=========================================================")
                             print("")
+
                     if elección=="s":
                         print("regresando al menú anterior...")
                         another=False
@@ -156,20 +164,25 @@ while booleanito==True:
         #esta opción muestra todo los productos  que hay para vender or sesiones
         kameha=True
         while kameha==True:
+            print("")
             menuproduct()
             print("elige una opción ")
             choose=int(input())
-       
+            print("")
             if choose==1:
+                print("======PANADERIA======")
                 for i in product["Panaderia"]:
                     print(i)
             if choose==2:
+                print("======PASTELERIA======")
                 for i in product["Pasteleria"]:
                     print(i)
             if choose==3:
+                print("======BEBIDAS======")
                 for i in product["Bebidas"]:
                     print(i)
             if choose==4:
+                print("======PROMOCIONES======")
                 for i in product["Apartado de promociones"]:
                     print(i)
             if choose==5:
